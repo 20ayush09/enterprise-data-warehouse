@@ -1,8 +1,8 @@
 --=================================
--- WARNING: This script permanently deletes the existing Data_Warehouse database
--- and all its data if it exists. Ensure you have backups and are connected
--- to the correct SQL Server instance before executing this script.
--- This script is intended for development and testing environments only.
+/* WARNING: This script permanently deletes the existing Data_Warehouse database
+ and all its data if it exists. Ensure you have backups and are connected
+ to the correct SQL Server instance before executing this script.
+ This script is intended for development and testing environments only.*/
 --=================================
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
