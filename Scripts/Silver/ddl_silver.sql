@@ -77,8 +77,8 @@ GO
 
 CREATE TABLE silver.crm_prd_info
 (
+	prd_num varchar(50),
 	prd_id int  ,
-	prd_key VARCHAR(50) ,
 	cat_key VARCHAR(50),
 	prd_nm VARCHAR(50),
 	prd_cost FLOAT,
@@ -162,6 +162,7 @@ GO
 
 CREATE TABLE silver.erp_prd_info
 (
+	Surrogate_KEY  int identity(1,1) primary key , 
 	ID VARCHAR(50) ,
 	CAT VARCHAR(50),
 	SUBCAT VARCHAR(50),

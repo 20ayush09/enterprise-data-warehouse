@@ -328,8 +328,8 @@ BEGIN
 
     INSERT INTO silver.crm_prd_info
     (
+        [prd_num],
         [prd_id],
-        [prd_key],
         [cat_key],
         [prd_nm],
         [prd_cost],
@@ -342,9 +342,8 @@ BEGIN
     FROM
     (
         SELECT
+        substring (prd_key,7,len(prd_key)) as prd_num,
             [prd_id],
-            [prd_key],
-
             -- Derive the category key from the first five characters
             -- of the product key and replace the hyphen with an underscore.
             REPLACE(SUBSTRING(prd_key, 1, 5), '-', '_') AS cat_key,
@@ -571,6 +570,7 @@ END AS COUNTRY
     )
 
     SELECT
+       
         [ID],
         [CAT],
         [SUBCAT],
